@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SLOT</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #canvas {
+            border: 2px solid #000;
+            margin-top: 20px;
+        }
+
+        .balance-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 700px;
+            margin-top: 70px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .balance-text {
+            color: #333;
+        }
+
+        .balance-value {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+<div class="balance-container">
+    <span class="balance-text">Balance: </span>
+    <span id="balance" class="balance-value">1000</span>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<canvas id="canvas" width="1600" height="1600"></canvas>
+<script src="balance.js"></script>
+<script src="animation.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
